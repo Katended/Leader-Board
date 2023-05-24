@@ -2,7 +2,7 @@
 <div align="center">
   
  
-  <h3><b>Todo-List</b></h3>
+  <h3><b>Leader Board</b></h3>
 
 </div>
 
@@ -21,7 +21,7 @@
 - [🔭 Future Features](#future-features)
 - [🤝 Contributing](#contributing)
 - [⭐️ Show your support](#support)
-- [🙏 Acknowledgements](#acknowledgements)
+- [ License](#License)
 
 
 
@@ -122,13 +122,6 @@ If you like this project just give me a star ⭐️!
 - **How soon are new features coming out?**
 
   - We currently do not have scheduled release time
-
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-## ⭐️ Acknowledgements <a name="acknowledgements"></a>
-
-
 
 ## 📝 License <a name="license"></a>
 
