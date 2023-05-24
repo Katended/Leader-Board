@@ -6,9 +6,18 @@ import postData from './modules/post.js';
 const dataContainer = document.querySelector('.scoresList');
 const refreshBtn = document.querySelector('.refreshBtn');
 const form = document.querySelector('.form');
+const notification = document.getElementById('notification');
+
 refreshBtn.addEventListener('click', async () => {
-  const { result } = await getData();
-  populate(result, dataContainer);
+  let { result } = await getData();
+  result = (result === undefined) ? [] : result;
+
+  if (result.length === 0) {
+    notification.innerHTML = 'There are no results to display.';
+    notification.classList.toggle('visible');
+  } else {
+    populate(result, dataContainer);
+  }
 });
 
 form.addEventListener('submit', (e) => {

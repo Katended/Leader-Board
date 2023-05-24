@@ -25,7 +25,7 @@ h1 {
 }
 
 .scoreBoard {
-  margin-top: 20px;
+  margin-top: 0.4em;
   border: 2px solid black;
   border-radius: 5px;
 }
@@ -63,4 +63,32 @@ button {
 #submit {
   display: flex;
   justify-content: right;
+}
+
+.visible {
+  animation: movein 0.5s ease forwards, moveout 0.5s 3s ease forwards;
+}
+
+#notification {
+  background: #f0cc04;
+  color: rgb(0, 0, 0);
+  padding: 5px;
+  border-radius: 3px;
+  display: inline-block;
+  font-size: 18px;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 100px;
+  left: -250px;
+}
+
+@keyframes movein {
+  from { left: -200%; }
+  to { left: 50%; }
+}
+
+@keyframes moveout {
+  from { left: 10px; }
+  to { left: -200%; }
 }
