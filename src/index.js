@@ -31,3 +31,5 @@ form.addEventListener('submit', (e) => {
   });
   form.reset();
 });
+const clickEvent = new Event('click');
+refreshBtn.dispatchEvent(clickEvent);
