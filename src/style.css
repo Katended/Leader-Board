@@ -2,11 +2,13 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 body {
   display: flex;
   flex-direction: column;
+  background-color: rgb(243, 243, 243);
 }
 
 h1 {
@@ -16,17 +18,23 @@ h1 {
 
 #displayArea,
 #addArea {
-  width: 30%;
+  width: 40%;
+  padding: 5px;
+}
+
+#addArea {
+  margin-left: 100px;
 }
 
 .wrapper {
   display: flex;
   justify-content: space-around;
+  justify-content: center;
 }
 
 .scoreBoard {
   margin-top: 0.4em;
-  border: 2px solid black;
+  border: 1px solid rgb(54, 54, 54);
   border-radius: 5px;
 }
 
@@ -38,13 +46,22 @@ input {
 }
 
 .scoresList li:nth-child(even) {
-  background-color: gray;
+  background-color: rgb(20, 163, 1);
+  color: white;
+}
+
+.scoresList li:nth-child(odd) {
+  background-color: rgb(0, 0, 0);
+  color: whitesmoke;
 }
 
 input[type="text"],
 input[type="number"] {
-  width: 100%;
+  width: 50%;
   margin: 20px 0;
+  padding: 5px;
+  border-radius: 15px;
+  border: 1px solid rgb(207, 205, 205);
 }
 
 .scoreItem {
@@ -57,12 +74,30 @@ input[type="number"] {
 }
 
 button {
-  padding: 5px;
+  -webkit-appearance: none;
+  user-select: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  outline: none;
+  cursor: pointer;
+  width: 100px;
+  height: 30px;
+  border-radius: 30px;
+  color: rgb(184, 181, 181);
+  border: 1px solid rgb(214, 212, 212);
+  background-image: linear-gradient(to top, #d8d9db 0%, #fff 80%, #fdfdfd 100%);
+}
+
+button:hover {
+  color: rgb(59, 59, 59);
 }
 
 #submit {
   display: flex;
-  justify-content: right;
+  justify-content: center;
+  padding: 3px;
+  margin-right: 6em;
 }
 
 .visible {
@@ -73,7 +108,7 @@ button {
   background: #f0cc04;
   color: rgb(0, 0, 0);
   padding: 5px;
-  border-radius: 3px;
+  border-radius: 5px;
   display: inline-block;
   font-size: 18px;
   justify-content: center;
@@ -91,4 +126,13 @@ button {
 @keyframes moveout {
   from { left: 10px; }
   to { left: -200%; }
+}
+
+.background-img {
+  height: auto;
+  text-align: center;
+  background-image: url(https://assets-global.website-files.com/58475a9…/58574e6…_bg.svg);
+  background-position: 50% 0;
+  background-size: cover;
+  margin-top: 0;
 }
