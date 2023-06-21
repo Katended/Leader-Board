@@ -27,7 +27,7 @@
 
 # 📖 ToDo-List Project <a name="about-project"></a>
 
-This is a Leader Board project.
+The leaderboard website displays scores submitted by different players. It also allows you to submit your score. All data is preserved thanks to the external Leaderboard API service.
 
 ## 🛠 Built With <a name="built-with"></a>
 
@@ -50,9 +50,7 @@ This is a Leader Board project.
 ### Key Features <a name="key-features"></a>
 
 - Add score
-
-
-
+  
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## 💻 Getting Started <a name="getting-started"></a>
